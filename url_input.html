@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <link rel = "stylesheet" href="style.css">
+  <title> My Form </title>
+</head>
+
+<body>
+    <header>
+      <h1>URL Input</h1>
+    </header>
+    <form action="/add" method="POST"> 
+      <fieldset>
+        <h3>Enter a valid url</h3>
+        
+    
+        <label>URL</label>
+        <input type ="text" id = 'urlID' name="id" pattern="https?://.+" required>
+
+        <br><br>
+        
+        <button type ="reset">Reset</button>
+        <button type ="submit">Submit</button>
+        <br><h5>URLs should start with "http://".</h5>
+      </fieldset>
+    </form>
+    <footer>
+        <hr>
+        <h4>Press exit to close this window</h4>
+      </footer>
+    </body>
+  </html>
